@@ -1,0 +1,24 @@
+#include <iostream>
+//#include <conio>
+ 
+using namespace std;
+ 
+int main() {
+  int vector[4]={2,3,4,5},sumpar=0,sumimpar=0,i,numsum;
+ 
+  for(i=0;i<4;i++) {
+    //numsum=vector[i]%10;
+ 
+    if (vector[i] % 2 == 0)
+      sumpar = sumpar + vector[i];
+    else
+      sumimpar = sumimpar + vector[i];
+  }
+ 
+  cout<<"La suma de los pares: "<<sumpar << endl;
+  cout<<"La suma de los impares: "<<sumimpar;
+  
+  std::cout << "TOTAL numeros par, impares: " << std::endl;
+ 
+  return 0;
+}
